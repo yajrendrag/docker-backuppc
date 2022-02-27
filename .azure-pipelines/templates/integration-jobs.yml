@@ -46,7 +46,7 @@ jobs:
       - script: |
           set -e
           docker load < docker-backuppc.tar.gz
-          docker run --name backuppc-integration --detach -p 8080:8080 adferrand/backuppc
+          docker run --name backuppc-integration --detach -p 9080:9080 adferrand/backuppc
           sleep 5
           output=`curl http://backuppc:password@localhost:8080/BackupPC_Admin`
           echo "Expect the backupp configuration page without errors"
