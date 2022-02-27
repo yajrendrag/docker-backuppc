@@ -51,7 +51,7 @@ COPY files/auth-ldap.conf /etc/lighttpd/auth-ldap.conf
 COPY files/entrypoint.sh /entrypoint.sh
 COPY files/supervisord.conf /etc/supervisord.conf
 
-EXPOSE 8080
+EXPOSE 9080
 
 WORKDIR /home/backuppc
 
